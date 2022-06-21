@@ -13,6 +13,11 @@ list-style: none;
 ---main-title-color:#212121;
 ---second-title-color: #757575;
 ---third-title-color:#FFFFFF;
+
+
+/* transitions */
+    --transition-base-time: 250ms;
+    --transition-base-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container {
     display: flex;
@@ -98,13 +103,19 @@ list-style: none;
 }
 .header-link:hover  {
     color: var(---second-btn-color);
+
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
 }
 .header-link:focus {
     color: var(---second-btn-color);
 }
 .header-contact:hover {
     color: var(---second-btn-color);
-    fill: var(---second-btn-color)
+    fill: var(---second-btn-color);
+
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
 }
 .header-contact:focus {
     color: var(---second-btn-color);
@@ -145,6 +156,10 @@ fill: #afb1b8;
 .soc-link:hover {
     fill: #FFFFFF;
     background-color: #2196F3;
+
+    transition-duration: var(--transition-base-time);
+        transition-timing-function: var(--transition-base-animation);
+
 }
 .soc-link:hover .soc-icon {
 fill: #FFFFFF;
@@ -221,7 +236,7 @@ fill: #FFFFFF;
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(
-           to right,
+    to right,
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)
     ), 
@@ -261,6 +276,8 @@ fill: #FFFFFF;
     align-items: center;
     margin-top: 0;
     justify-content: center;
+
+    
 }
 .soc-item {
     width: 44px;
@@ -278,6 +295,9 @@ fill: #FFFFFF;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
 }
 .soc-link2 {
     width: 100%;
@@ -287,10 +307,15 @@ fill: #FFFFFF;
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
+
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
+    
 }
 .soc-link2:hover {
     background-color: #2196F3;
     border-color: #2196F3;
+
 }
 
 .soc-link:hover .soc-icon {
@@ -314,6 +339,9 @@ fill: #FFFFFF;
     border-radius: 4px;
     border: none;
     padding: 10px 32px;
+
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
 }
 .button-icon {
     display:inline-flex;
@@ -343,6 +371,10 @@ fill: #FFFFFF;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
+    transition-property: color, background-color;
 }
 .soc-icon2 {
     fill: #afb1b8;
@@ -450,6 +482,10 @@ fill: #FFFFFF;
     margin-bottom: -30px;
     margin-top: 0;
 
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
+    transition-property: color, background-color;
+
 }
 .about2-link {
     flex-basis: calc (100%/3-30px);
@@ -462,7 +498,7 @@ fill: #FFFFFF;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(---second-title-color);
+    color: var(---third-title-color);
     list-style: none;
     margin-bottom: 0px;
     
@@ -630,6 +666,49 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
     padding: 20px 24px;
 }
+
+
+.portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-thumb-wrap,
+.portfolio-thumb-text {
+    position: absolute;
+}
+
+.portfolio-thumb-wrap {
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: var(---second-btn-color);
+
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
+}
+.portfolio-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+.portfolio-link:hover .portfolio-thumb-wrap,
+.portfolio-link:focus .portfolio-thumb-wrap {
+    transform: translateY(0);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* Цвет основного текста color: #212121; */
 /* вторичный цвет текста color: #757575; */
 /* белый color: #FFFFFF; */
