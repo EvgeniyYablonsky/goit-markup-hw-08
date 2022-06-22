@@ -63,6 +63,7 @@ list-style: none;
     letter-spacing: 0.03em;
     text-decoration: none;
     display:inline-block;
+    margin-top: 10px;
 
 }
 .menu {
