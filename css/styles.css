@@ -148,6 +148,7 @@ list-style: none;
     align-items: center;
 
 }
+
 .soc-icon1 {
     align-items: center;
     margin-right: 10px;
@@ -161,15 +162,14 @@ fill: #afb1b8;
     background-color: #2196F3;
 
     transition-duration: var(--transition-base-time);
-        transition-timing-function: var(--transition-base-animation);
+    transition-timing-function: var(--transition-base-animation);
 
 }
 .soc-link:hover .soc-icon {
 fill: #FFFFFF;
 }
 
-.hero-item :not(:last-child)  {
-    margin-bottom: 30px;
+.hero-item {
     margin-right: 30px;
 }
 
@@ -190,6 +190,9 @@ fill: #FFFFFF;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
 }
 .header-link {
     padding-top: 32px;
@@ -203,7 +206,7 @@ fill: #FFFFFF;
     color: var(---main-title-color);
    
     transition-duration: var(--transition-base-time);
-        transition-timing-function: var(--transition-base-animation);
+    transition-timing-function: var(--transition-base-animation);
 }
 .current1 {
     color: var(---second-btn-color);
@@ -264,7 +267,6 @@ fill: #FFFFFF;
     padding-left: 0;
     display: flex;
     margin: 0;
-    
 }
 
 .about-work {
@@ -281,8 +283,7 @@ fill: #FFFFFF;
     align-items: center;
     margin-top: 0;
     justify-content: center;
-
-    
+    margin-top: 16px;
 }
 .soc-item {
     width: 44px;
@@ -303,6 +304,7 @@ fill: #FFFFFF;
 
     transition-duration: var(--transition-base-time);
     transition-timing-function: var(--transition-base-animation);
+    transition-property: color, background-color;
 }
 .soc-link2 {
     width: 100%;
@@ -347,6 +349,7 @@ fill: #FFFFFF;
 
     transition-duration: var(--transition-base-time);
     transition-timing-function: var(--transition-base-animation);
+    transition-property: color, background-color;
 }
 .button-icon {
     display:inline-flex;
@@ -358,6 +361,7 @@ fill: #FFFFFF;
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
+   
 }
 
 .button-icon>.icon {
@@ -426,6 +430,8 @@ fill: #FFFFFF;
 }
 
 .product-action {
+    font-style: 14px;
+    font-weight: 600;
     position: absolute;
     width: 100%;
     height: 70px;
@@ -562,7 +568,7 @@ fill: #FFFFFF;
     letter-spacing:0.03em;
     color: var(---second-title-color);
     margin: 0;
-    margin-bottom: 16px;
+
 }
 .about1-link {
     list-style: none;
@@ -609,6 +615,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .button-all:hover {
+    color: #FFFFFF;
     background-color: var(---second-btn-color);
     transition-duration: var(--transition-base-time);
     transition-timing-function: var(--transition-base-animation);
@@ -695,6 +702,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition-timing-function: var(--transition-base-animation);
 }
 .portfolio-link {
+    text-decoration: none;
     height: 100%;
     transition-duration: var(--transition-base-time);
     transition-timing-function: var(--transition-base-animation);
@@ -765,7 +773,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(---main-btn-color);
     text-decoration: none;
 }
 
