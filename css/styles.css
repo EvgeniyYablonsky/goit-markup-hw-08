@@ -484,7 +484,7 @@ fill: #FFFFFF;
 .img {
     max-width: 100%;
     height: auto;
-    display: flex;
+    display: block;
 }
 
 .section-title {
