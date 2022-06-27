@@ -518,7 +518,7 @@ fill: #FFFFFF;
     padding: 0;
     margin: 0;
 }
-.about-work .img {
+.about-work  {
     padding: 0 auto;
     width: calc (100%/3-30px);
     justify-content: center;
