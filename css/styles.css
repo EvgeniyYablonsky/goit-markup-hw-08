@@ -396,7 +396,6 @@ fill: #FFFFFF;
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-   
 }
 
 .button-icon>.icon {
@@ -554,7 +553,7 @@ fill: #FFFFFF;
 }
 
 .checkbox:checked+.checkbox-icon {
-    fill: var(---main-btn-color));
+    fill: var(---main-btn-color);
     background-color: var(---second-btn-color);
     border-color: var(---second-btn-color);
 }
