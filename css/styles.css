@@ -576,8 +576,8 @@ img {
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(---main-btn-color);
     margin-top: 0 ;
+    color: var(---main-btn-color);
 }
 
 .about-us{
@@ -597,12 +597,12 @@ img {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    color: var(---second-title-color);
 
 
 }
 .about1-link {
     background: #FFFFFF;
+    color: var(---main-btn-color);
     margin-right: 30px;
 }
 
