@@ -456,6 +456,8 @@ fill: #FFFFFF;
 }
 
 .modal-close {
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -463,6 +465,7 @@ fill: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 
 }
 
@@ -481,7 +484,7 @@ fill: #FFFFFF;
     left: 0;
     bottom: 0;    
 }
-.img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
