@@ -1077,6 +1077,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 .button-accent:hover,
 .button-accent:focus {
     background-color: #1882d7;
+    color: #FFFFFF;
 }
 
 .button-send {
@@ -1106,6 +1107,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 }
 .button-icon-send {
     margin-left: 15px;
+    
 }
 
 /* Цвет основного текста color: #212121; */
