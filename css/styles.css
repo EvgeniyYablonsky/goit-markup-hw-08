@@ -319,6 +319,7 @@ fill: #FFFFFF;
     margin-top: 0;
     justify-content: center;
     margin-top: 16px;
+    margin-right: 70px;
 }
 .soc-item {
     width: 44px;
@@ -402,6 +403,15 @@ fill: #FFFFFF;
     background-color: #F5F4FA;
     margin-right: 10px;
 
+}
+.button-icon-send {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
 }
 .button-icon2 {
     display: inline-flex;
@@ -1040,6 +1050,68 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(---main-btn-color);
+}
+
+.footer-item.subscription {
+    margin-left: auto;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscription-form .form-field {
+    margin-bottom: 0;
+}
+
+.subscription-input {
+    width: 358px;
+    margin-right: 12px;
+}
+
+.subscription-label {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button-accent {
+    color: var(---third-title-color);
+    background-color: var(---second-btn-color);
+    fill: var(---third-title-color);
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background-color: #1882d7;
+}
+
+.button-send {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    padding: 10px 32px;
+    margin-left: 12px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(---main-title-color);
+    fill: var(---main-title-color);
+
+    background-color: #f5f4fa;
+    border: none;
+    border-radius: 4px;
+
+    transition-duration: var(--transition-base-time);
+    transition-timing-function: var(--transition-base-animation);
+    transition-property: color, background-color, box-shadow;
 }
 
 
