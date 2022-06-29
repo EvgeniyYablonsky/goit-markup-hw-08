@@ -404,15 +404,7 @@ fill: #FFFFFF;
     margin-right: 10px;
 
 }
-.button-icon-send {
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-}
+
 .button-icon2 {
     display: inline-flex;
     margin-right: 30px;
@@ -508,8 +500,7 @@ fill: #FFFFFF;
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-
-    letter-spacing: var(--letter-spacing-default);
+    letter-spacing: 0.03em;
 
     transition-property: opacity;
     transition-duration: var(--transition-base-time);
@@ -1113,7 +1104,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     transition-timing-function: var(--transition-base-animation);
     transition-property: color, background-color, box-shadow;
 }
-
+.button-icon-send {
+    margin-left: 15px;
+}
 
 /* Цвет основного текста color: #212121; */
 /* вторичный цвет текста color: #757575; */
