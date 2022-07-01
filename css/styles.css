@@ -52,7 +52,6 @@ list-style: none;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(---main-btn-color);
     margin: 0;
 }
@@ -265,12 +264,10 @@ fill: #FFFFFF;
 .hero  {
     padding: 200px 0px;
     margin: auto;
-    font-weight: 900;
     font-size: 14px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: var(---second-title-color);
     max-width: 1600px;   
     height: 600px;
@@ -446,10 +443,12 @@ fill: #FFFFFF;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 528px;
-    min-width: 581px;
-    padding: 15px;
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
     background-color: #fff;
+    border-radius: 4px
+    ;
     
 }
 
@@ -464,17 +463,21 @@ fill: #FFFFFF;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
 
 }
+.modal-close:hover {
+    fill: #2196F3;
+}
+
 .modal-title {
-    margin-top: 0;
-    margin-bottom: 30px;
+    font-family: Roboto;
+    margin-top: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
-
-    color: var(---main-btn-color);
+    color: var(---main-title-color);
 }
 
 .modal-link {
@@ -495,11 +498,13 @@ fill: #FFFFFF;
 }
 /* CHECKBOX */
 .form-label {
+    font-family: Roboto;
+    font-weight: 400px;
     position: absolute;
     left: 15px;
     top: 50%;
-    transform: translateY(-50%);
     letter-spacing: 0.03em;
+    margin-bottom: 4px;
 
     transition-property: opacity;
     transition-duration: var(--transition-base-time);
@@ -599,20 +604,23 @@ fill: #FFFFFF;
 
 .form-field-check {
     display: block;
+
 }
 
 .form-option {
     position: absolute;
     top: 0;
+    margin-bottom: 4px;
     transform: translateY(-100%);
 
     font-size: 12px;
-    line-height: 1.66;
+    line-height: 1.16;
 
     letter-spacing: 0.01em;
 
     color: var(---second-title-color);
 }
+
 
 .form-icon {
     position: absolute;
@@ -648,7 +656,7 @@ fill: #FFFFFF;
 /* input states */
 .input:hover,
 .input:focus {
-    border-color: var(---main-btn-color);
+    border-color: var(---second-btn-color);
 }
 
 .input::placeholder {
@@ -665,7 +673,7 @@ fill: #FFFFFF;
 .input-large {
     height: 50px;
     padding: 15px;
-
+    margin-left: auto;
     font-size: 16px;
 }
 
@@ -682,7 +690,7 @@ fill: #FFFFFF;
 
 .input-has-icon:hover+.form-icon,
 .input-has-icon:focus+.form-icon {
-    fill: var(---second-title-color);
+    fill: var(---second-btn-color);
 }
 
 .product-action {
@@ -893,7 +901,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: var(---third-title-color);
     padding-top: 60px;
     padding-bottom: 60px;
-
 }
 .adress {
     list-style: none;
@@ -1049,6 +1056,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 .subscription-form {
     display: flex;
     align-items: center;
+
 }
 
 .subscription-form .form-field {
@@ -1092,10 +1100,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     line-height: 1.875;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(---main-title-color);
-    fill: var(---main-title-color);
+    color: var(---third-title-color);
+    fill: var(---third-title-color);
 
-    background-color: #f5f4fa;
+    background-color: var(---second-btn-color);
     border: none;
     border-radius: 4px;
 
@@ -1107,7 +1115,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     margin-left: 15px;
     
 }
-
 /* Цвет основного текста color: #212121; */
 /* вторичный цвет текста color: #757575; */
 /* белый color: #FFFFFF; */
