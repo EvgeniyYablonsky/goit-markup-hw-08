@@ -478,6 +478,7 @@ fill: #FFFFFF;
     line-height: 1.15;
     letter-spacing: 0.03em;
     color: var(---main-title-color);
+    margin-bottom: 30px;
 }
 
 .modal-link {
@@ -504,7 +505,6 @@ fill: #FFFFFF;
     left: 15px;
     top: 50%;
     letter-spacing: 0.03em;
-    margin-bottom: 4px;
 
     transition-property: opacity;
     transition-duration: var(--transition-base-time);
@@ -526,13 +526,15 @@ fill: #FFFFFF;
     width: 1px;
     height: 1px;
     padding: 0;
-    margin: -1px;
+    margin-left: 52px;
+
 
     border: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     overflow: hidden;
     white-space: nowrap;
+
 }
 
 .checkbox-icon {
@@ -540,7 +542,8 @@ fill: #FFFFFF;
     background-color: #fff;
     border: 2px solid var(---main-btn-color);
     border-radius: 3px;
-
+    
+    
     margin-right: 3px;
     vertical-align: text-top;
 
@@ -609,16 +612,19 @@ fill: #FFFFFF;
 
 .form-option {
     position: absolute;
-    top: 0;
     margin-bottom: 4px;
-    transform: translateY(-100%);
+
+
+    transform: translateY(-125%);
 
     font-size: 12px;
+
     line-height: 1.16;
-
+    
     letter-spacing: 0.01em;
-
+    
     color: var(---second-title-color);
+    
 }
 
 
@@ -638,10 +644,11 @@ fill: #FFFFFF;
 }
 
 .input {
+    outline: none;
     height: 40px;
     max-width: 100%;
     padding: 11px;
-
+    margin-bottom: 4px;
     letter-spacing: 0.03em;
     color: var(---main-btn-color);
 
