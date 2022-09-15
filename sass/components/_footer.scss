@@ -77,11 +77,12 @@
 
 .list-link {
     margin-right: 10px;
+    &:last-child {
+            margin-right: 0px;
+        }
 }
 
-.list-link:last-child {
-    margin-right: 0px;
-}
+
 
 .footer-icons {
     width: 44px;
