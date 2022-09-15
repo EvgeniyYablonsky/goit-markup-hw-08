@@ -91,10 +91,10 @@
 
 .btn-item {
     margin-right: 9px;
-}
 
-.btn-item:nth-child(5n) {
-    margin-right: 0px;
+    &:nth-child(5n) {
+        margin-right: 0px;
+    }
 }
 
 .btn-send {

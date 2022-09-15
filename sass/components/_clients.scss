@@ -23,12 +23,16 @@
     margin-right: 30px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
-}
 
-.btn-list:nth-child(6n) {
-    margin-right: 0px;
-}
+    &:nth-child(6n) {
+        margin-right: 0px;
+    }
 
+    &:hover,
+    &:focus {
+        border: 1px solid rgba(33, 150, 243, 1);
+    }
+}
 .href-icon {
     display: flex;
     justify-content: center;
@@ -43,14 +47,10 @@
 .button-icon {
     fill: rgba(175, 177, 184, 1);
     cursor: pointer;
+    &:hover .button-icon,
+    &:focus .button-icon {
+fill: var(--accent-color);
+        }
 }
 
-.href-icon:hover .button-icon,
-.href-icon:focus .button-icon {
-    fill: var(--accent-color);
-}
 
-.btn-list:hover,
-.btn-list:focus {
-    border: 1px solid rgba(33, 150, 243, 1);
-}

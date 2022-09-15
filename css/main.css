@@ -150,9 +150,11 @@ body {
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
 }
-
 .btn-list:nth-child(6n) {
   margin-right: 0px;
+}
+.btn-list:hover, .btn-list:focus {
+  border: 1px solid rgb(33, 150, 243);
 }
 
 .href-icon {
@@ -168,15 +170,8 @@ body {
   fill: rgb(175, 177, 184);
   cursor: pointer;
 }
-
-.href-icon:hover .button-icon,
-.href-icon:focus .button-icon {
+.button-icon:hover .button-icon, .button-icon:focus .button-icon {
   fill: var(--accent-color);
-}
-
-.btn-list:hover,
-.btn-list:focus {
-  border: 1px solid rgb(33, 150, 243);
 }
 
 .contact-nav .contact-link:focus,
@@ -583,7 +578,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .flex-element:nth-child(3n) {
   margin-right: 0px;
 }
@@ -998,7 +992,6 @@ body {
 .btn-item {
   margin-right: 9px;
 }
-
 .btn-item:nth-child(5n) {
   margin-right: 0px;
 }

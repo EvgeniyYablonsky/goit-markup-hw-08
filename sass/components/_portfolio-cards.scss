@@ -12,10 +12,10 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.flex-element:nth-child(3n) {
-    margin-right: 0px;
+    &:nth-child(3n) {
+        margin-right: 0px;
+    }
 }
 
 .flex-element:nth-last-child(-n + 3) {
