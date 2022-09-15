@@ -2,6 +2,10 @@
     display: flex;
     margin-left: 93px;
     position: relative;
+    & .link:hover,
+        & .link:focus {
+            color: var(--accent-color);
+        }
 }
 
 .site-nav .item:not(:last-child) {
@@ -22,10 +26,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-color);
-}
+
 
 .site-nav .link-current {
     display: flex;

@@ -850,6 +850,9 @@ body {
   margin-left: 93px;
   position: relative;
 }
+.site-nav .link:hover, .site-nav .link:focus {
+  color: var(--accent-color);
+}
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -866,11 +869,6 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
 }
 
 .site-nav .link-current {
