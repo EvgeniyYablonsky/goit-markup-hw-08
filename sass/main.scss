@@ -1,8 +1,22 @@
 @import './utilits/variables';
-@import './base/common';
 @import './utilits/placeholder';
+
+
+@import './base/common';
 @import './base/section';
 @import './base/conteiner';
 
 
-
+@import './components/clients';
+@import './components/contact-nav';
+@import './components/footer-form';
+@import './components/header';
+@import './components/hero';
+@import './components/logo';
+@import './components/modal';
+@import './components/portfolio-cards';
+@import './components/team';
+@import './components/works';
+@import './components/site-nav';
+@import './components/buttons';
+@import './components/footer';

@@ -20,3 +20,11 @@ html {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+body {
+    background-color: var(--background-color);
+    color: var(--general-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+}
