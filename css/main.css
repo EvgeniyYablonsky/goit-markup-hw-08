@@ -277,7 +277,7 @@ body {
   border-bottom: 1px solid var(--header-border-color);
 }
 
-.main-nav {
+.header_nav {
   display: flex;
   align-items: center;
 }
