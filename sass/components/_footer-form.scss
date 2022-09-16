@@ -1,20 +1,20 @@
-.footer-icons:hover,
-.footer-icons:focus {
+.footer-soc__link:hover,
+.footer-soc__link:focus {
     background-color: var(--accent-color);
 }
 
-.address-contact {
+.footer__list {
     max-width: 231px;
     max-height: 81px;
 }
 
-.footer-position {
+.footer__thumb {
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.form-footer {
+.footer-form {
     min-width: 570px;
     margin-left: 93px;
 }
@@ -30,7 +30,7 @@
     margin-bottom: 20px;
 }
 
-.footer-input {
+.footer-form__input {
     min-width: 358px;
     padding-top: 15px;
     padding-left: 16px;
@@ -49,7 +49,7 @@
     margin-right: 12px;
 }
 
-.button-footer {
+.footer-form__button {
     min-width: 200px;
     height: 50px;
     position: absolute;

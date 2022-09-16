@@ -9,7 +9,7 @@
 .studio {
     color: var(--logo-studio);
 }
-.logo-footer {
+.footer__logo {
     display: flex;
     margin-bottom: 20px;
     color: var(--accent-color);
@@ -19,6 +19,6 @@
     text-decoration: none;
 }
 
-.footer .studio-footer {
+.footer .footer__studio {
     color: var(--primary-white);
 }

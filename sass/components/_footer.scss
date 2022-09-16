@@ -1,4 +1,4 @@
-.footer {
+.footer  {
     display: flex;
     color: var(--primary-white);
     background-color: var(--background-hero-footer);
@@ -9,13 +9,13 @@
 }
 
 
-.footer-adress {
+.footer__adress  {
     margin-top: 0px;
     margin-bottom: 9px;
     font-style: normal;
 }
 
-.mail-footer {
+.footer__mail {
     display: flex;
     margin-bottom: 9px;
 }
@@ -27,8 +27,8 @@
     font-style: normal;
 }
 
-.contact-footer {
-    color: var(--contact-footer);
+.footer__mail {
+    color: var(--footer__tel);
     text-decoration: none;
     font-style: normal;
 }
@@ -41,13 +41,13 @@
     margin-left: 70px;
 }
 
-.join-text {
+.footer-soc__join {
     display: flex;
 
     align-items: center;
 }
 
-.link-footer {
+.footer-soc__thumb {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@
     /* margin: 40px 940px 20px 70px; */
 }
 
-.join {
+.footer-soc__join-text {
     font-family: "Roboto" sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -69,13 +69,13 @@
     display: flex;
 }
 
-.footer-list {
+.footer-soc__list {
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
 
-.list-link {
+.footer-soc__item {
     margin-right: 10px;
     &:last-child {
             margin-right: 0px;
@@ -84,7 +84,7 @@
 
 
 
-.footer-icons {
+.footer-soc__link {
     width: 44px;
     height: 44px;
     display: flex;
