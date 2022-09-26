@@ -1,0 +1,114 @@
+.footer-form {
+    @media screen and (max-width: 767px) {
+        margin: auto;
+        padding: 0px 15px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 60px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 570px;
+        margin-left: 93px;
+    }
+}
+
+.footer-form__title {
+    font-family: "Roboto" sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+.footer-form__input {
+    min-width: 358px;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    background-color: $background-hero-footer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 12px;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 450px;
+    }
+}
+
+.footer-form__button {
+    min-width: 200px;
+    height: 50px;
+    position: absolute;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $buton-hero-hover;
+    }
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+        transform: translateX(120px);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+        margin-top: 20px;
+        position: relative;
+        transform: translateX(268px);
+    }
+}
+
+.footer-form__button-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $primary-white;
+    margin-right: 10px;
+}
+
+.footer-form__icon {
+    width: 24px;
+    height: 24px;
+    transform: translateY(3px);
+}

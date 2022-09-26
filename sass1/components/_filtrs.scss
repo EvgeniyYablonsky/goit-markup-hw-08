@@ -1,0 +1,91 @@
+.portfolio {
+    @media screen and (max-width:479px) {
+        width: 100%;
+    }
+}
+
+.portfolio__container {
+    @media screen and (max-width:479px) {
+        width: 480px;
+    }
+}
+
+.portfolio__filtrs-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio__filtrs-item:not(:last-child) {
+        margin-right: 8px;
+
+        &:nth-child(-n + 3) {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio__filtrs-item:not(:last-child) {
+        margin-right: 9px;
+    }
+}
+
+.portfolio__filtrs-btn {
+    min-width: 145px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    color: $secondary-color;
+    background-color: $secondary-background;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.portfolio__filtrs-all,
+.portfolio__filtrs-all:focus {
+    display: inline-block;
+    min-width: 73px;
+    padding: 6px 22px;
+    color: $primary-white;
+    background-color: $accent-color;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    &:hover {
+        background-color: $accent-color;
+        color: $primary-white;
+    }
+}

@@ -1,0 +1,42 @@
+.header__logo {
+    color: $accent-color;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+}
+
+.header__studio {
+    color: $logo-studio;
+}
+
+.footer__logo {
+    display: flex;
+    margin-bottom: 20px;
+    color: $accent-color;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    @media screen and (max-width: 1119px) {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+}
+
+.footer__studio {
+    color: $primary-white;
+}
