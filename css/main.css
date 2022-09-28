@@ -593,6 +593,7 @@ header__menu-icon:focus {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   color: #ffffff;
