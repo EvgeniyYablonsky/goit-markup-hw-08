@@ -168,10 +168,11 @@ body {
 @media screen and (max-width: 767px) {
   .header__menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     padding: 48px 40px;
     text-align: center;
   }
@@ -276,6 +277,7 @@ header__menu-icon:focus {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .footer__logo {
@@ -521,7 +523,7 @@ header__menu-icon:focus {
 .portfolio__filtrs-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
   .portfolio__filtrs-list {
@@ -547,7 +549,6 @@ header__menu-icon:focus {
   }
 }
 .portfolio__filtrs-btn {
-  min-width: 145px;
   padding: 6px 22px;
   border-radius: 4px;
   color: #212121;
@@ -585,9 +586,13 @@ header__menu-icon:focus {
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio__filtrs-all:hover,
-.portfolio__filtrs-all:focus:hover {
+.portfolio__filtrs-all:hover .portfolio__filtrs-all:focus,
+.portfolio__filtrs-all:hover .portfolio__filtrs-all:focus:focus,
+.portfolio__filtrs-all:focus:hover .portfolio__filtrs-all:focus,
+.portfolio__filtrs-all:focus:hover .portfolio__filtrs-all:focus:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -834,6 +839,7 @@ header__menu-icon:focus {
 .footer-soc__join {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .footer-soc__join {

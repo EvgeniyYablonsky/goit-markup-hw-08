@@ -85,6 +85,7 @@
     color: $contact-footer;
     text-decoration: none;
     font-style: normal;
+    
 }
 
 .footer-soc {
@@ -106,6 +107,7 @@
 .footer-soc__join {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 767px) {
         display: block;
