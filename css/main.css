@@ -837,7 +837,6 @@ header__menu-icon:focus {
 @media screen and (max-width: 1199px) {
   .team__thumb {
     max-width: 100%;
-    gap: 30px;
   }
 }
 
