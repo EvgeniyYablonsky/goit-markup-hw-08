@@ -34,7 +34,6 @@
 }
 
 .footer-form__input {
-    min-width: 358px;
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
@@ -87,7 +86,6 @@
 
     @media screen and (max-width: 767px) {
         position: relative;
-        transform: translateX(120px);
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
