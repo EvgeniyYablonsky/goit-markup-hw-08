@@ -525,7 +525,6 @@ header__menu-icon:focus {
 }
 
 .hero {
-  min-width: 768px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
