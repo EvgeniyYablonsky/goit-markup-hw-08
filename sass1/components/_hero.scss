@@ -22,8 +22,9 @@
 .hero {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 199px;
+    padding-top: 118px;
     padding-bottom: 118px;
+    max-width: 480px;
     min-height: 400px;
     background-color: $background-hero-footer;
     background-repeat: no-repeat;
@@ -74,6 +75,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+        min-width: 1600px;
         padding-top: 200px;
         padding-right: 0px;
         padding-bottom: 200px;

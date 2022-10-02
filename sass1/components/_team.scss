@@ -62,10 +62,6 @@
     @media screen and (max-width: 767px) {
         width: 450px;
         margin-right: 0;
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {

@@ -73,6 +73,12 @@ body {
   padding-bottom: 0px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid rgb(236, 236, 236);
@@ -84,7 +90,6 @@ body {
 }
 @media screen and (max-width: 767px) {
   .header {
-    min-width: 480px;
     position: fixed;
     top: 0;
     left: 0;
@@ -97,17 +102,11 @@ body {
   }
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
-
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 450px;
-  height: 80px;
+  height: 60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -266,6 +265,7 @@ header__menu-icon:focus {
 }
 
 .footer__logo {
+  font-family: Ralaway;
   display: flex;
   margin-bottom: 20px;
   color: #2196f3;
@@ -510,12 +510,6 @@ header__menu-icon:focus {
   }
 }
 
-@media screen and (max-width: 479px) {
-  .portfolio__container {
-    width: 480px;
-  }
-}
-
 .portfolio__filtrs-list {
   display: flex;
   justify-content: center;
@@ -703,7 +697,6 @@ header__menu-icon:focus {
   text-align: left;
   vertical-align: top;
   letter-spacing: 0.06em;
-  min-width: 322px;
 }
 @media screen and (max-width: 767px) {
   .portfolio-cards__title {
@@ -906,8 +899,7 @@ header__menu-icon:focus {
 
 @media screen and (max-width: 767px) {
   .footer-form {
-    margin: auto;
-    padding: 0px 15px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -919,8 +911,7 @@ header__menu-icon:focus {
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
-    min-width: 570px;
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
@@ -943,6 +934,7 @@ header__menu-icon:focus {
 }
 
 .footer-form__input {
+  width: 358px;
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
@@ -972,7 +964,6 @@ header__menu-icon:focus {
 .footer-form__button {
   min-width: 200px;
   height: 50px;
-  position: absolute;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -990,6 +981,8 @@ header__menu-icon:focus {
 @media screen and (max-width: 767px) {
   .footer-form__button {
     position: relative;
+    display: block;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

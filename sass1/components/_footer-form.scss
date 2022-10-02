@@ -1,7 +1,6 @@
 .footer-form {
     @media screen and (max-width: 767px) {
-        margin: auto;
-        padding: 0px 15px;
+        margin: 0 auto;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -11,8 +10,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-        min-width: 570px;
-        margin-left: 93px;
+        
+        margin-left: auto;
     }
 }
 
@@ -34,6 +33,7 @@
 }
 
 .footer-form__input {
+    width: 358px;
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
@@ -64,7 +64,6 @@
 .footer-form__button {
     min-width: 200px;
     height: 50px;
-    position: absolute;
     background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -86,6 +85,8 @@
 
     @media screen and (max-width: 767px) {
         position: relative;
+        display: block;
+        margin: 0 auto;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
