@@ -106,7 +106,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+}
+@media screen and (max-width: 767px) {
+  .header__nav {
+    height: 60px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -273,7 +277,6 @@ header__menu-icon:focus {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .footer__logo {
@@ -513,7 +516,7 @@ header__menu-icon:focus {
 .portfolio__filtrs-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
   .portfolio__filtrs-list {
@@ -551,7 +554,7 @@ header__menu-icon:focus {
   cursor: pointer;
   border: none;
   display: inline-block;
-  transition-property: box-shadow;
+  transition-property: box-shadow, color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -825,7 +828,6 @@ header__menu-icon:focus {
 .footer-soc__join {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .footer-soc__join {
